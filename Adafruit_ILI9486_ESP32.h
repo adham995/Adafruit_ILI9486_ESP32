@@ -58,8 +58,8 @@ Define pins and Output Data Registers
 */
 
 //Control pins |RS |CS |RST|
-#define TFT_RST        26
-#define TFT_RS         33
+#define TFT_RST        27
+#define TFT_RS         26
 
 
 // ESP32
