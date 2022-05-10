@@ -14,10 +14,10 @@
  ****************************************************/
 
 
-#include "Adafruit_ILI9486_STM32.h"
+#include "Adafruit_ILI9486_ESP32.h"
 
- // for pin definitions, please refer to the header file
-Adafruit_ILI9486_STM32 tft;
+//for pin definitions, please refer to the header file
+Adafruit_ILI9486_ESP32 tft;
 
 void setup()
 {
@@ -90,11 +90,6 @@ void loop(void) {
 		testText();
 		delay(1000);
 	}
-	Serial.println("\n************************************************\nWithout DMA:\n************************************************");
-	useDMA = 0;
-	doTest();
-	Serial.println("\n************************************************\nNow using DMA:\n************************************************");
-	useDMA = 1;
 	doTest();
 	while(1);
 }
